@@ -11,14 +11,20 @@
 <UDLText name="T">
 <Content><![CDATA[
 // Localization in cache doesn't work without DOMAIN,
-//So what I am least bothered
 
 ]]></Content>
 </UDLText>
 
 <UDLText name="T">
 <Content><![CDATA[
-// This needs to be changed based on your domain
+// So what I am least bothered
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// This needs to be changed based on your domainlllll
 
 ]]></Content>
 </UDLText>
