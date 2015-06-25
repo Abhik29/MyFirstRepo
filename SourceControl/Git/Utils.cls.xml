@@ -6,6 +6,13 @@
 <ProcedureBlock>1</ProcedureBlock>
 <TimeCreated>62657,53384.637236</TimeCreated>
 
+<UDLText name="T">
+<Content><![CDATA[
+// Just a comment
+
+]]></Content>
+</UDLText>
+
 <Parameter name="Storage">
 <Default>^Git</Default>
 </Parameter>
