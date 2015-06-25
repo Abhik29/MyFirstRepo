@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="ZAQD.test.MyInteger">
+<Super>%Library.Integer</Super>
+<TimeCreated>63719,79365.877222</TimeCreated>
+
+<Parameter name="TranslationKey">
+<Type>%String</Type>
+</Parameter>
+
+<UDLText name="T">
+<Content><![CDATA[
+// Localization in cache doesn't work without DOMAIN,
+
+]]></Content>
+</UDLText>
+
+<UDLText name="T">
+<Content><![CDATA[
+// This needs to be changed based on your domain
+
+]]></Content>
+</UDLText>
+
+<Parameter name="DOMAIN">
+<Default>AC</Default>
+</Parameter>
+
+<Method name="LogicalToDisplay">
+<ClassMethod>1</ClassMethod>
+<CodeMode>objectgenerator</CodeMode>
+<FormalSpec>%val:MyInteger</FormalSpec>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+    If %parameter("DISPLAYLIST")'="" {
+		Set dispSep=$e(%parameter("DISPLAYLIST"))
+		Set valSep=$e(%parameter("VALUELIST"))
+		Set transSep=$e(%parameter("TranslationKey"))
+		For pos=2:1:$Length(%parameter("VALUELIST"),valSep) {
+			Do %code.WriteLine($c(9)_"Quit:%val="_$Piece(%parameter("VALUELIST"),valSep,pos)_" $$$Text("""_$Piece(%parameter("TranslationKey"),transSep,pos)_"@"_$Piece(%parameter("DISPLAYLIST"),dispSep,pos)_""","""_..#DOMAIN_""")")
+    	}
+	}
+	Do %code.WriteLine($c(9)_"Quit %val")
+    Quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="ZAQD.test.MainClass">
+<Owner>Abhik Dey</Owner>
+<Super>%Persistent</Super>
+<TimeCreated>63719,79369.038182</TimeCreated>
+
+<Property name="Count">
+<Type>MyInteger</Type>
+<Parameter name="DISPLAYLIST" value=",One,Two,Three"/>
+<Parameter name="DOMAIN" value="ACW"/>
+<Parameter name="TranslationKey" value=",@wan,@to,@tre"/>
+<Parameter name="VALUELIST" value=",1,2,3"/>
+</Property>
+
+<Property name="ReverseCount">
+<Type>MyInteger</Type>
+<Parameter name="DISPLAYLIST" value=",One,Two,Three"/>
+<Parameter name="VALUELIST" value=",3,2,1"/>
+</Property>
+
+<Property name="JustCount">
+<Type>MyInteger</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Library.CacheStorage</Type>
+<DataLocation>^ZAQD.test.MainClassD</DataLocation>
+<DefaultData>MainClassDefaultData</DefaultData>
+<IdLocation>^ZAQD.test.MainClassD</IdLocation>
+<IndexLocation>^ZAQD.test.MainClassI</IndexLocation>
+<StreamLocation>^ZAQD.test.MainClassS</StreamLocation>
+<ExtentSize>100000</ExtentSize>
+<Data name="MainClassDefaultData">
+<Value name="1">
+<Value>%%CLASSNAME</Value>
+</Value>
+<Value name="2">
+<Value>Count</Value>
+</Value>
+<Value name="3">
+<Value>ReverseCount</Value>
+</Value>
+<Value name="4">
+<Value>JustCount</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+</Export>
